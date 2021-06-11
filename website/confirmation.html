@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syber's Books | Online Book Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./icons/logo.svg" type="image">
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="background-overlay">
+            <nav>
+                <div class="logo">
+                        <a href="index.html"><img src="./icons/logotitle.svg"></a>
+                </div>
+        
+                <div id="burger" onclick="openFunction()">
+                    <img src="./icons/hamburger.svg" alt="burger">
+                </div>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./listing.html">Books</a></li>
+                    <li>Login</li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li>Events</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li class="closebtn" onclick="closeFunction()"><img src="./icons/hamburgerV.svg" alt="Vham"></li>
+                </ul>
+        
+                <div class="nav-icon">
+                    <div class="btn-search">
+                        <a href="search.html">
+                            <input class="search-text" type="text" placeholder="I'm searching for...">
+                        <img id=search-icon src="./icons/search.svg">
+                        </a>
+                    </div>
+                    <div class="btn-cart">
+                        <a href="./cart.html">
+                            <img src="./icons/cart.svg">
+                        </a>
+                            <div class="cart-preview">
+                                <h5>Your cart is empty. Go add some surprises!</h5>
+                                <button><a href="listing.html">Browse Items</a></button>
+                            </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="separator"></div>
+
+            <header>
+                <div class="head-container head-container--checkout">
+                    <div class="page-tracker page-tracker--checkout">
+                        <h5><a href="cart.html">Home / Shopping Cart / <u>Order Confirmation</u></a></h5>
+                    </div>
+    
+                    <div class="locator-container">
+                        <button class="locator">Current Store: Malvern</button>
+                        <div class="locator-content">
+                            <h4>Change To: Caulfield</h4>
+                        </div>
+                    </div>
+                </div>  
+            </header>
+
+            <div class="cart-topic cart-topic--confirmation">
+               <h1>Order Placed!</h1> 
+            </div>
+            
+            <main>
+
+                <div class="confirmation">
+                    <h2>Thank you for choosing Syber's Books!</h2> 
+                    <h2>We will be preparing your order from Malvern Store.</h2>
+                    <h2>A conformation email will be send to 123456789@gmail.com shortly.</h2>
+                    <h2>Meanwhile, you can...</h2>
+
+                    <div class="btns btns--confirmation">
+                        <div class="btn-confirmation">
+                            <button><a href="index.html">Continue Shopping</a></button>
+                            <img src="./icons/right arrow.svg" alt="arrow">
+                            <button>View My Order</button>
+                            <img src="./icons/right arrow.svg" alt="arrow">
+                        </div>
+                </div>    
+                </div>
+
+                
+
+            </main>
+        
+            <footer>
+                <div class="footer-background">
+                    <div class="footer-line">
+                        <h5>Copyright Yueqi Dai 2021</h5>
+                    </div>
+                </div>
+            </footer>        
+        </div>
+    </div>
+    <script src="javascript.js" type="text/javascript"></script>
+</body>
+</html>

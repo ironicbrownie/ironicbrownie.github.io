@@ -1,0 +1,19 @@
+:root{
+    --colour-navbar: #ECF4F6;
+    --colour-locator: #8E9EA1;
+    --colour-box: #FFFFFF;
+    --colour-sale: #FFF4AF;
+    --colour-expand: #D9E4E7;
+    --colour-confirm: #000000;
+    --colour-textspace: #F2F2F2;
+    --colour-menu: black;
+    --colour-image-heading: white;
+    --colour-shadow: rgba(10, 10, 10, 0.123);
+    --colour-text-shadow: rgba(10, 10, 10, 0.42);
+    --colour-separator: #686868;
+    --colour-popup: #52697B;
+    --colour-checkout-button: #D9E4E7;
+    --colour-dropdown: darkgrey;
+    --colour-confirmation: #989898;
+    --colour-shadow-banner: rgb(10 10 10 / 6%);
+}

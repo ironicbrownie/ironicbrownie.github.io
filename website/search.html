@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syber's Books | Online Book Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./icons/logo.svg" type="image">
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="background-overlay">
+            <nav>
+                <div class="logo">
+                        <a href="index.html"><img src="./icons/logotitle.svg"></a>
+                </div>
+        
+                <div id="burger" onclick="openFunction()">
+                    <img src="./icons/hamburger.svg" alt="burger">
+                </div>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./listing.html">Books</a></li>
+                    <li>Login</li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li>Events</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li class="closebtn" onclick="closeFunction()"><img src="./icons/hamburgerV.svg" alt="Vham"></li>
+                </ul>
+        
+                <div class="nav-icon">
+                    <div class="btn-search">
+                        <a href="search.html">
+                            <input class="search-text" type="text" placeholder="I'm searching for...">
+                        <img id=search-icon src="./icons/search.svg">
+                        </a>
+                    </div>
+                    <div class="btn-cart">
+                        <a href="./cart.html">
+                            <img src="./icons/cart.svg">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="separator"></div>
+            <header>
+                <div class="head-container">
+                    <div class="slogan">
+                    <h4>- seeking a lifestyle -</h4>
+                    </div>
+                    <div class="locator-container">
+                        <button class="locator">Current Store: Malvern</button>
+                        <div class="locator-content">
+                            <h4>Change To: Caulfield</h4>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="listing-bar listing-bar--search">
+                <h1>Search Result for: "Star Wars"</h1>
+                <div class="advanced-container">
+                    <button>Advanced</button>
+                    <div class="advanced-content">
+                        <button class="locator">Current Store: Malvern</button>
+                                <div class="locator-content">
+                                    <h4>Change To: Caulfield</h4>
+                                </div>
+                        <h2>Sort By</h2>
+                        <h4>Most Popular</h4>
+                        <h4>Price Low to High</h4>
+                        <h4>Name A-Z</h4>
+                        <div class="separator separator--filter"></div>
+                        <h2>Filter</h2>
+                        <h4>On Sale</h4>
+                        <h4>In Stock</h4>
+                        <div class="separator separator--filter"></div>
+                        <h2>Category</h2>
+                        <h4>Space</h4>
+                        <h4>Future</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-turner">
+                <h5> < 1 2 3 4 5 6 7 ... > </h5>
+            </div>
+
+            <main>
+
+                <div class="product">
+                    <div class="product-wrapper">
+                        <div class="product-media">
+                            <a href="detail.html">
+                            <img src="image/bookcover.jpg">
+                            <div class="product-layer">
+                                <h3>Star Wars: Dark <br> Force Rising</h3>
+                                <h4>$25.99</h4>
+                            </div>
+                            </a>  
+                        </div>
+                        <div class="function-bar">
+                            <div class="wishlist">
+                                <img src="icons/favorite_border_black_18dp.svg">
+                            </div>
+                            <div class="ver-separator"></div>
+                            <div class="cart">
+                                <a href="cart.html">
+                                    <img src="icons/add_shopping_cart_black_18dp.svg" alt="carticon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wrapper">
+                        <div class="product-media">
+                            <a href="detail.html">
+                            <img src="image/bookcover.jpg">
+                            <div class="product-layer">
+                                <h3>Star Wars: Dark <br> Force Rising</h3>
+                                <h4>$25.99</h4>
+                            </div>
+                            </a>  
+                        </div>
+                        <div class="function-bar">
+                            <div class="wishlist">
+                                <img src="icons/favorite_border_black_18dp.svg">
+                            </div>
+                            <div class="ver-separator"></div>
+                            <div class="cart">
+                                <a href="cart.html">
+                                    <img src="icons/add_shopping_cart_black_18dp.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wrapper">
+                        <div class="product-media">
+                            <a href="detail.html">
+                            <img src="image/bookcover.jpg">
+                            <div class="product-layer">
+                                <h3>Star Wars: Dark <br> Force Rising</h3>
+                                <h4>$25.99</h4>
+                            </div>
+                            </a>  
+                        </div>
+                        <div class="function-bar">
+                            <div class="wishlist">
+                                <img src="icons/favorite_border_black_18dp.svg">
+                            </div>
+                            <div class="ver-separator"></div>
+                            <div class="cart">
+                                <a href="cart.html">
+                                    <img src="icons/add_shopping_cart_black_18dp.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wrapper">
+                        <div class="product-media">
+                            <a href="detail.html">
+                            <img src="image/bookcover.jpg">
+                            <div class="product-layer">
+                                <h3>Star Wars: Dark <br> Force Rising</h3>
+                                <h4>$25.99</h4>
+                            </div>
+                            </a>  
+                        </div>
+                        <div class="function-bar">
+                            <div class="wishlist">
+                                <img src="icons/favorite_border_black_18dp.svg">
+                            </div>
+                            <div class="ver-separator"></div>
+                            <div class="cart">
+                                <a href="cart.html">
+                                    <img src="icons/add_shopping_cart_black_18dp.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wrapper">
+                        <div class="product-media">
+                            <a href="detail.html">
+                            <img src="image/bookcover.jpg">
+                            <div class="product-layer">
+                                <h3>Star Wars: Dark <br> Force Rising</h3>
+                                <h4>$25.99</h4>
+                            </div>
+                            </a>  
+                        </div>
+                        <div class="function-bar">
+                            <div class="wishlist">
+                                <img src="icons/favorite_border_black_18dp.svg">
+                            </div>
+                            <div class="ver-separator"></div>
+                            <div class="cart">
+                                <a href="cart.html">
+                                    <img src="icons/add_shopping_cart_black_18dp.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wrapper">
+                        <div class="product-media">
+                            <a href="detail.html">
+                            <img src="image/bookcover.jpg">
+                            <div class="product-layer">
+                                <h3>Star Wars: Dark <br> Force Rising</h3>
+                                <h4>$25.99</h4>
+                            </div>
+                            </a>  
+                        </div>
+                        <div class="function-bar">
+                            <div class="wishlist">
+                                <img src="icons/favorite_border_black_18dp.svg">
+                            </div>
+                            <div class="ver-separator"></div>
+                            <div class="cart">
+                                <a href="cart.html">
+                                    <img src="icons/add_shopping_cart_black_18dp.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wrapper">
+                        <div class="product-media">
+                            <a href="detail.html">
+                            <img src="image/bookcover.jpg">
+                            <div class="product-layer">
+                                <h3>Star Wars: Dark <br> Force Rising</h3>
+                                <h4>$25.99</h4>
+                            </div>
+                            </a>  
+                        </div>
+                        <div class="function-bar">
+                            <div class="wishlist">
+                                <img src="icons/favorite_border_black_18dp.svg">
+                            </div>
+                            <div class="ver-separator"></div>
+                            <div class="cart">
+                                <a href="cart.html">
+                                    <img src="icons/add_shopping_cart_black_18dp.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wrapper">
+                        <div class="product-media">
+                            <a href="detail.html">
+                            <img src="image/bookcover.jpg">
+                            <div class="product-layer">
+                                <h3>Star Wars: Dark <br> Force Rising</h3>
+                                <h4>$25.99</h4>
+                            </div>
+                            </a>  
+                        </div>
+                        <div class="function-bar">
+                            <div class="wishlist">
+                                <img src="icons/favorite_border_black_18dp.svg">
+                            </div>
+                            <div class="ver-separator"></div>
+                            <div class="cart">
+                                <a href="cart.html">
+                                    <img src="icons/add_shopping_cart_black_18dp.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wrapper">
+                        <div class="product-media">
+                            <a href="detail.html">
+                            <img src="image/bookcover.jpg">
+                            <div class="product-layer">
+                                <h3>Star Wars: Dark <br> Force Rising</h3>
+                                <h4>$25.99</h4>
+                            </div>
+                            </a>  
+                        </div>
+                        <div class="function-bar">
+                            <div class="wishlist">
+                                <img src="icons/favorite_border_black_18dp.svg">
+                            </div>
+                            <div class="ver-separator"></div>
+                            <div class="cart">
+                                <a href="cart.html">
+                                    <img src="icons/add_shopping_cart_black_18dp.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wrapper">
+                        <div class="product-media">
+                            <a href="detail.html">
+                            <img src="image/bookcover.jpg">
+                            <div class="product-layer">
+                                <h3>Star Wars: Dark <br> Force Rising</h3>
+                                <h4>$25.99</h4>
+                            </div>
+                            </a>  
+                        </div>
+                        <div class="function-bar">
+                            <div class="wishlist">
+                                <img src="icons/favorite_border_black_18dp.svg">
+                            </div>
+                            <div class="ver-separator"></div>
+                            <div class="cart">
+                                <a href="cart.html">
+                                    <img src="icons/add_shopping_cart_black_18dp.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-turner">
+                    <h5> < 1 2 3 4 5 6 7 ... > </h5>
+                </div>
+                
+            </main>
+        
+            <footer>
+                <div class="footer-background">
+                    <div class="footer-line">
+                        <h5>Copyright Yueqi Dai 2021</h5>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="javascript.js" type="text/javascript"></script>
+</body>
+</html>

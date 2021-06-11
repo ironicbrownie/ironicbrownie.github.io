@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syber's Books | Online Book Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./icons/logo.svg" type="image">
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="background-overlay">
+            <nav>
+                <div class="logo">
+                        <a href="index.html"><img src="./icons/logotitle.svg"></a>
+                </div>
+        
+                <div id="burger" onclick="openFunction()">
+                    <img src="./icons/hamburger.svg" alt="burger">
+                </div>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./listing.html">Books</a></li>
+                    <li>Login</li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li>Events</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li class="closebtn" onclick="closeFunction()"><img src="./icons/hamburgerV.svg" alt="Vham"></li>
+                </ul>
+        
+                <div class="nav-icon">
+                    <div class="btn-search">
+                        <a href="search.html">
+                            <input class="search-text" type="text" placeholder="I'm searching for...">
+                        <img id=search-icon src="./icons/search.svg">
+                        </a>
+                    </div>
+                    <div class="btn-cart">
+                        <a href="./cart.html">
+                            <img src="./icons/cart.svg">
+                        </a>
+                            <div class="cart-preview">
+                                <h5>Your cart is empty. Go add some surprises!</h5>
+                                <button><a href="listing.html">Browse Items</a></button>
+                            </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="separator"></div>
+
+            <header>
+                
+
+                <div class="head-container head-container--checkout">
+                    <div class="page-tracker page-tracker--checkout">
+                        <h5><a href="listing Sci-fi.html">Home / Books / Sci-fi / <u>Star Wars: Dark Force Rising</u></a></h5>
+                    </div>
+                    <div class="locator-container">
+                        <button class="locator">Current Store: Malvern</button>
+                        <div class="locator-content">
+                            <h4>Change To: Caulfield</h4>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="listing-bar">
+                <div class="bar-layer">
+                    <div class="filter-container">
+                        <button><img id="triangle" src="icons/Polygon 30.svg"></button>
+                        <div class="filter-content">
+                            <button class="locator">Current Store: Malvern</button>
+                                    <div class="locator-content">
+                                        <h4>Change To: Caulfield</h4>
+                                    </div>
+                            <h2>Sort By</h2>
+                            <h4>Most Popular</h4>
+                            <h4>Price Low to High</h4>
+                            <h4>Name A-Z</h4>
+                            <div class="separator separator--filter"></div>
+                            <h2>Filter</h2>
+                            <h4>On Sale</h4>
+                            <h4>In Stock</h4>
+                            <div class="separator separator--filter"></div>
+                            <h2>Category</h2>
+                            <h4>Space</h4>
+                            <h4>Future</h4>
+                        </div>
+                    </div>
+                    <h3>Sci-fi</h3>
+                </div>
+                <img src="image/listing1.jpg">
+            </div>
+
+            <main>
+                <div class="detail">
+                    <div class="cover">
+                        <img src="./image/bookcover.jpg" alt="bookcover">
+                    </div>
+                    <div class="info">
+                        <div class="info-book">
+                            <h1>Star Wars: Dark Force Rising</h1>
+                            <h4>Timothy Zahn</h4>
+                            <h5><s>$34.65</s></h5>
+                            <h2>$25.99</h2>
+                        </div>
+                        <div class="separator separator--small"></div>
+                        <div class="info-function">
+                            <img src="./icons/location.svg" alt="check status">
+                            <h2>In Stock: Malvern</h2>
+                        </div>
+                        <div class="info-cart">
+                                <div class="detail-wishlist">
+                                    <img src="./icons/favorite_border_black_18dp.svg" alt="wishlist"> 
+                                </div>
+                                <div class="detail-cart">
+                                    <img id="cart-icon" src="./icons/add_shopping_cart_black_18dp.svg" alt="cart">
+                                </div>    
+                            </div>
+                    </div>
+                </div>
+                <div class="info-extra">
+                            <ul class="title-1">
+                                <li><u>About</u></li>
+                                <li>Details</li>
+                                <li>Availability</li>
+                            </ul>
+                            <div class="separator separator--large"></div>
+                            <h5 class="into-about">
+                                The dying Empire's most cunning and ruthless warlord 
+                                -- Grand Admiral Thrawn -- has taken command of the remnants of the Imperial fleet...
+                            </h5>
+                            <div class="btn-more">
+                                <button>Read More</button>
+                            </div>
+                            <h1>Comments</h1>
+                            <div class="separator separator--large"></div>
+                            <h5 class="source"><i>Yoda - From bookreviews.com</i></h5>
+                            <h5 class="comment"><i>This series is fascinating! I can't stop reading it...</i></h5>
+                            <div class="btn-more">
+                                <button>Read More</button>
+                            </div>
+                </div>
+
+                <div class="popup">
+                    <div class="popup-content">
+                        <div class="close">+</div>
+                        <h1>Added To Cart</h1>
+                        <div class="popup-book">
+                            <img src="./image/bookcover.jpg" alt="bookcover">
+                            <div class="popup-details">
+                                <div class="book-info">
+                                    <h2>Star Wars: Dark Force Rising</h2>
+                                    <div class="book-info-more">
+                                    <h4>Timothy Zahn</h4>
+                                    <h3>$25.99</h3> 
+                                    </div>
+                                    <h3>Qty: 1</h3>
+                                </div>
+                               <div class="popup-functions">
+                                <div class="btn">
+                                    <button><a href="detail.html">Continue</a></button>
+                                    <button><a href="cart.html">Checkout</a></button>
+                                </div>
+                            </div> 
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            </main>
+            <footer>
+                <div class="footer-background">
+                    <div class="footer-line">
+                        <h5>Copyright Yueqi Dai 2021</h5>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>        
+    
+    <script src="javascript.js"></script>
+
+</body>
+</html>

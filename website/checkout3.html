@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syber's Books | Online Book Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./icons/logo.svg" type="image">
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="background-overlay">
+            <nav>
+                <div class="logo">
+                        <a href="index.html"><img src="./icons/logotitle.svg"></a>
+                </div>
+        
+                <div id="burger" onclick="openFunction()">
+                    <img src="./icons/hamburger.svg" alt="burger">
+                </div>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./listing.html">Books</a></li>
+                    <li>Login</li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li>Events</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li class="closebtn" onclick="closeFunction()"><img src="./icons/hamburgerV.svg" alt="Vham"></li>
+                </ul>
+        
+                <div class="nav-icon">
+                    <div class="btn-search">
+                        <a href="search.html">
+                            <input class="search-text" type="text" placeholder="I'm searching for...">
+                        <img id=search-icon src="./icons/search.svg">
+                        </a>
+                    </div>
+                    <div class="btn-cart">
+                        <a href="./cart.html">
+                            <img src="./icons/cart.svg">
+                        </a>
+                            <div class="cart-preview">
+                                <h5>Your cart is empty. Go add some surprises!</h5>
+                                <button><a href="listing.html">Browse Items</a></button>
+                            </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="separator"></div>
+
+            <header>
+
+                <div class="head-container head-container--checkout">
+                    <div class="page-tracker page-tracker--checkout">
+                        <h5><a href="checkout2.html">Home / Shopping Cart / Checkout 1 / Checkout 2 / <u>Checkout 3</u></a></h5>
+                    </div>
+                    <div class="locator-container">
+                        <button class="locator">Current Store: Malvern</button>
+                        <div class="locator-content">
+                            <h4>Change To: Caulfield</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+            <main>
+
+                <div class="checkout-wrapper">
+                    <div class="cart-topic">
+                        <h1>Checkout</h1>
+                    </div>
+    
+                    <div class="process process--checkout3">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                </div>
+            
+            <div class="contact contact--checkout3">
+                <div class="payment">
+                    <div class="payment-details">
+                        <h2>Payment Option</h2>
+                        <div class="separator separator--m"></div>
+                        <div class="card-icons">
+                            <img src="./icons/card-mastercard.svg" alt="card1">
+                            <img src="./icons/card-visa.svg" alt="card2">
+                            <img src="./icons/card-amex.svg" alt="card3">
+                            <button onclick="myFunction()"><img src="./icons/up arrow.svg" alt="uparrow"></button>
+                            
+                            <div id="PayCollaps">
+                                <form class="checkout2">
+                                    <label for="name">Card Number</label><br>
+                                    <input type="text" id="formGL" name="formG" placeholder="e.g. XXXXXXXXXXXXXXXX" size="16"><br>
+                                    <label for="name">Card Holder Name</label><br>
+                                    <input type="text" id="formGL" name="formG" placeholder="e.g. Arthur Morgan"><br>
+                                </form>
+    
+                                <form class="name">
+                                    <div class="firstname firstname--checkout3">
+                                    <label for="name">Expiry Date</label><br>
+                                        <select name="month">
+                                            <option value="MM">MM</option>
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                            <option value="3">03</option>
+                                            <option value="4">04</option>
+                                            <option value="5">05</option>
+                                            <option value="6">06</option>
+                                            <option value="7">07</option>
+                                            <option value="8">08</option>
+                                            <option value="9">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                        <select name="year">
+                                            <option value="YYYY">YYYY</option>
+                                            <option value="1">2021</option>
+                                            <option value="2">2022</option>
+                                            <option value="3">2023</option>
+                                            <option value="4">2024</option>
+                                            <option value="5">2025</option>
+                                        </select>
+                                    </div>   
+                                    <div class=" firstname firstname--checkout3">
+                                        <label for="name">CVV</label><br>
+                                        <input type="text" id="formGM" name="formGS" size="3" placeholder="e.g. 123"><br>
+                                    </div>
+                                </form>
+                            </div>                   
+                        </div> 
+                    </div>
+    
+                    <div class="other-option">
+                        <div class="option-icons">
+                            <div class="icons-wrapper">
+                                <img src="./icons/paypal-full.svg" alt="op1">
+                                <img src="./icons/down arrow.svg" alt="downarrow">
+                            </div>
+                            <div class="icons-wrapper">
+                                <img src="./icons/afterpay-logo.svg" alt="op2">
+                                <img src="./icons/down arrow.svg" alt="downarrow">
+                            </div>
+                            <div class="icons-wrapper">
+                                <img id="giftcard" src="./icons/card_giftcard_black_18dp.svg" alt="op3"> 
+                                <h5>Got a Gift Card? Redeem it! </h5>
+                                <img src="./icons/down arrow.svg" alt="downarrow">
+                                
+                            </div>
+                        </div>
+    
+                        <div class="option-down">
+                            <h1></h1>
+                            
+                        </div>                   
+                    </div>
+                </div>
+    
+                <div class="delivery delivery--checkout3">
+
+                    <div class="btn-checkout btn-checkout--2">
+                        <a href="confirmation.html">
+                            <button>Place Order</button>
+                            <img id="rightarrow" src="./icons/right arrow.svg" alt="right arrow">
+                        </a>
+                    </div> 
+
+                    <div class="summary summary--checkout3">       
+                        <div class="summary-head">
+                           <h3>Order Summary</h3>
+                           <button><a href="cart.html">Change</a></button> 
+                        </div>
+                        <div class="separator separator--m"></div>
+                        <div class="summary-wrapper">
+                            <div class="categories categories--checkout3">
+                                <h4>Star Wars: Dark Force Rising</h4>
+                                <h4>Milk and Honey</h4>
+                                <h4>Shipping</h4>
+                                <h2>2 items from Malvern</h2>
+                            </div>
+                            <div class="price price--checkout3">
+                                <h4>$25.99</h4>
+                                <h4>$20.99</h4>
+                                <h4>$10.00</h4>
+                                <h2>$56.98</h2>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="options options--checkout3c">
+                        <div class="summary-head">
+                            <h3>Delivery Details</h3>
+                            <button><a href="checkout2.html">Change</a></button> 
+                         </div>
+                        <div class="separator separator--m"></div>
+                        <div class="option-wrapper">
+                            <div class="categories categories--checkout3">
+                                <h4>123456789@gmail.com<br>
+                                    Arthur Morgan 123/300 Tahiti Road<br>  
+                                    Melbourne 3000 VIC Australia<br>
+                                    0123456789</h4>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="options options--payment">
+                        <div class="summary-head">
+                            <h3>Payment Details</h3>
+                            <button><a href="checkout2.html">Change</a></button> 
+                         </div>
+                        <div class="separator separator--m"></div>
+                        <div class="option-wrapper">
+                            <div class="categories categories--checkout3">
+                                <h4>Arthur Morgan XXXXXXXXXXXXXXXX<br>
+                                    MM/YYYY 123</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            </main>
+        
+            <footer>
+                <div class="footer-background">
+                    <div class="footer-line">
+                        <h5>Copyright Yueqi Dai 2021</h5>
+                    </div>
+                </div>
+            </footer>        
+        </div>
+    </div>
+    
+    <script src="javascript.js" type="text/javascript"></script>
+</body>
+</html>

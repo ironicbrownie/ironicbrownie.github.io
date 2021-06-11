@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syber's Books | Online Book Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./icons/logo.svg" type="image">
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="background-overlay">
+            <nav>
+                <div class="logo">
+                        <a href="index.html"><img src="./icons/logotitle.svg"></a>
+                </div>
+        
+                <div id="burger" onclick="openFunction()">
+                    <img src="./icons/hamburger.svg" alt="burger">
+                </div>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./listing.html">Books</a></li>
+                    <li>Login</li>
+                    <li><a href="./cart.html">Cart</a></li>
+                    <li>Events</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li class="closebtn" onclick="closeFunction()"><img src="./icons/hamburgerV.svg" alt="Vham"></li>
+                </ul>
+        
+                <div class="nav-icon">
+                    <div class="btn-search">
+                        <a href="search.html">
+                            <input class="search-text" type="text" placeholder="I'm searching for...">
+                        <img id=search-icon src="./icons/search.svg">
+                        </a>
+                    </div>
+                    <div class="btn-cart">
+                        <a href="./cart.html">
+                            <img src="./icons/cart.svg">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="separator"></div>
+            <header>
+                <div class="head-container head-container--cart">
+                   <div class="page-tracker page-tracker--cart">
+                        <h5> Home / Books / Sci-fi / Star Wars: Dark Force Rising / <u>Shopping Cart</u> </h5>
+                    </div>
+                    <div class="cart-topic cart-topic--cart">
+                        <h1>Shopping Cart</h1>
+                        <div class="locator-container locator-container--cart">
+                            <button class="locator">Current Store: Malvern</button>
+                            <div class="locator-content">
+                                <h4>Change To: Caulfield</h4>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </header>
+
+            <main>
+                <div class="cart-container">
+                    <div class="cart-items">
+                        <div class="item-wrapper">
+                            <div class="item-number">
+                                <h5>1</h5>
+                                <h5>+</h5>
+
+                            </div>
+                            <div class="separator separator--xs"></div>
+
+                            <div class="book">
+                                <div class="book-detail">
+                                    <img src="./image/bookcover.jpg" alt="bookcover">
+                                    <div class="detail-2">
+                                        <h4>Star Wars: Dark Force Rising</h4>
+                                        <h5>Timothy Zahn</h5>
+                                    </div> 
+                                    <div class="purchase-detail">
+                                        <form class="qty">
+                                            <input type="number" id="qty" name="qty" min="0" placeholder="Qty:1"><br>
+                                        </form>
+                                        <h5>$25.99</h5>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+
+                        <div class="item-wrapper">
+                            <div class="item-number">
+                                <h5>2</h5>
+                                <h5>+</h5>
+
+                            </div>
+                            <div class="separator separator--xs"></div>
+
+                            <div class="book">
+                                <div class="book-detail">
+                                    <img src="./image/bookcover2.jpg" alt="bookcover2">
+                                    <div class="detail-2">
+                                        <h4>Milk and Honey</h4>
+                                        <h5>Rupi Kaur</h5> 
+                                    </div>  
+                                    <div class="purchase-detail purchase-detail--2">
+                                        <form class="qty">
+                                            <input type="number" id="qty" name="qty" min="0" placeholder="Qty:1"><br>
+                                        </form>
+                                        <h5>$20.99</h5>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+
+                        <div class="btn-shopping">
+                            <a href="detail.html">
+                                <img src="./icons/left arrow.svg" alt="left arrow">
+                                <button>Continue Shopping</button> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cart-sum">
+                        <form class="coupon">
+                            <input type="text" id="coupon" placeholder="I got a coupon...">
+                        </form>
+
+                        <div class="sum-total">
+                            <div class="categories">
+                                <h3>2 items from Malvern</h3>
+                                <h3>Shipping est.</h3>
+                                <h2>Total:</h2>
+                            </div>
+                            <div class="price">
+                                <h3>$46.98</h3>
+                                <h3>$10.00</h3>
+                                <h2>$56.98</h2>
+                            </div>
+                        </div>
+
+                        <div class="btn-checkout">
+                            <a href="checkout.html">
+                                <button>Secured Checkout</button>
+                                <img src="./icons/rightarrowsmall.svg" alt="right arrow s">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        
+            <footer>
+                <div class="footer-background">
+                    <div class="footer-line">
+                        <h5>Copyright Yueqi Dai 2021</h5>
+                    </div>
+                </div>
+            </footer>        
+        </div>
+    </div>
+    <script src="javascript.js" type="text/javascript"></script>
+</body>
+</html>
